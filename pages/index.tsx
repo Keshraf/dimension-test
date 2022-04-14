@@ -33,7 +33,7 @@ const Home: NextPage = () => {
       {window && <Window set={setWindow} newTask={setNewTask} setTodo = {setTodo} setPending = {setPending} setDone={setDone}/>}
       <main className='flex flex-row justify-evenly mt-24 w-5/6'>
       
-        <section className='flex flex-row justify-between w-5/6'>
+        <section className='flex lg:flex-row justify-between w-5/6 flex-col'>
           <Card data={todo} title="Todo" set={setTodo} setWindow={setWindow}/>
           <Card data={pending} title="Pending" set={setPending} setWindow={setWindow} />
           <Card data={done} title="Done" set={setDone} setWindow={setWindow} />

@@ -23,7 +23,7 @@ type Item = {
 const Card = ({data, title, set, setWindow}:Props) => {
 
     return(
-        <div className="bg-gray-800 px-6 py-8 h-auto w-96 flex flex-col justify-start items-center rounded">
+        <div className="bg-gray-800 px-6 py-8 h-auto w-96 flex flex-col justify-start items-center rounded m-4" >
             <Bar title={title} total={data.length} setWindow={setWindow}/>
             {
                 data.map((item) => {
